@@ -21,13 +21,17 @@ class GameScene: SKScene {
 
         let foreground = SKSpriteNode(imageNamed: "foreground_1")
         foreground.anchorPoint = CGPoint.zero
-        background.zPosition = Layer.foreground.rawValue
+        foreground.zPosition = Layer.foreground.rawValue
         foreground.position = CGPoint.zero
         addChild(foreground)
 
         let player = Player()
         player.position = CGPoint(x: size.width/2, y: foreground.frame.maxY)
         addChild(player)
+
+        player.walk()
     }
-}
+
+  }
+
 

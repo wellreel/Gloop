@@ -47,4 +47,20 @@ class Player: SKSpriteNode {
     required init?(coder aDecoder: NSCoder) {
       fatalError("init(coder:) has not been implemented")
     }
+
+    // MARK: - METHODS
+    func walk() {
+      // Check for textures
+      guard let walkTextures = walkTextures else {
+        preconditionFailure("Could not find textures!")
+      }
+
+      // Run animation (forever)
+      startAnimation(textures: walkTextures, speed: 0.25,
+                     name: PlayerAnimationType.walk.rawValue,
+                     count: 0, resize: true, restore: true)
+    }
 }
+
+
+
