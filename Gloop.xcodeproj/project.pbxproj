@@ -94,8 +94,8 @@
 		34D6CC75257C8DF90033B843 /* Gloop iOS */ = {
 			isa = PBXGroup;
 			children = (
-				34D6CC76257C8DF90033B843 /* AppDelegate.swift */,
 				34D6CC78257C8DF90033B843 /* GameViewController.swift */,
+				34D6CC76257C8DF90033B843 /* AppDelegate.swift */,
 				34D6CC7A257C8DF90033B843 /* Main.storyboard */,
 				34D6CC7D257C8DF90033B843 /* LaunchScreen.storyboard */,
 				34D6CC80257C8DF90033B843 /* Info.plist */,
